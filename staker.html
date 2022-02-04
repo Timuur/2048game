@@ -4,8 +4,9 @@
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
 </head>
 <body>
+
     <script>
-class Boot extends Phaser.Scene {
+        class Boot extends Phaser.Scene {
 
     constructor ()
     {
@@ -65,7 +66,7 @@ class Boot extends Phaser.Scene {
 
 }
 
-class Instructions extends Phaser.Scene {
+        class Instructions extends Phaser.Scene {
 
     constructor ()
     {
@@ -104,7 +105,7 @@ class Instructions extends Phaser.Scene {
 
 }
 
-class StackerGame extends Phaser.Scene {
+        class StackerGame extends Phaser.Scene {
 
     constructor ()
     {
@@ -483,7 +484,7 @@ class StackerGame extends Phaser.Scene {
     }
 }
 
-class GameOver extends Phaser.Scene {
+        class GameOver extends Phaser.Scene {
 
     constructor ()
     {
@@ -564,7 +565,7 @@ class GameOver extends Phaser.Scene {
 
 }
 
-var config = {
+        var config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
@@ -572,8 +573,8 @@ var config = {
     scene: [ Boot, Instructions, StackerGame, GameOver ]
 };
 
-var game = new Phaser.Game(config);
-</script>
+        var game = new Phaser.Game(config);
+    </script>
 
 </body>
-</html
+</html>
