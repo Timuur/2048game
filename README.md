@@ -1,59 +1,37 @@
-<!ДОКТИП HTML>
-<html>
-<голова>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
-</голова>
-<тело>
+## Welcome to GitHub Pages
 
-    <скрипт>
-    переменная конфига = {
-        тип: Phaser.AUTO,
-        ширина: 800,
-        высота: 600,
-        физика: {
-            по умолчанию: «аркада»,
-            аркада: {
-                гравитация: {г: 200}
-            }
-        },
-        место действия: {
-            предварительная загрузка: предварительная загрузка,
-            создать: создать
-        }
-    };
+You can use the [editor on GitHub](https://github.com/Timuur/2048game/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-    var game = новый Phaser.Game(config);
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-    предварительная загрузка функции ()
-    {
-        this.load.setBaseURL('http://labs.phaser.io');
+### Markdown
 
-        this.load.image('небо', 'активы/небо/space3.png');
-        this.load.image('логотип', 'активы/спрайты/phaser3-logo.png');
-        this.load.image('красный', 'активы/частицы/красный.png');
-    }
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-    функция создать ()
-    {
-        this.add.image(400, 300, 'небо');
+```markdown
+Syntax highlighted code block
 
-        var частиц = this.add.particles('красный');
+# Header 1
+## Header 2
+### Header 3
 
-        var излучатель = частиц.createEmitter({
-            скорость: 100,
-            шкала: {начало: 1, конец: 0},
-            blendMode: «ДОБАВИТЬ»
-        });
+- Bulleted
+- List
 
-        var logo = this.physics.add.image(400, 100, 'логотип');
+1. Numbered
+2. List
 
-        logo.setVelocity(100, 200);
-        логотип.setBounce(1, 1);
-        logo.setCollideWorldBounds(true);
+**Bold** and _Italic_ and `Code` text
 
-        эмиттер.startFollow (логотип);
-    }
-    </скрипт>
+[Link](url) and ![Image](src)
+```
 
-</тело>
-</html>
+For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Timuur/2048game/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
